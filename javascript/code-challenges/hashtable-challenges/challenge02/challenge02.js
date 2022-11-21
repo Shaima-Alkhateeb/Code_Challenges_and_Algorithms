@@ -8,8 +8,8 @@ class HashTable {
 
     set(key, value) {
         if ( !this.storage[ key ] )
-         this.storage[ key ] = [ value ];
-        this.storage[ key ] = [ ...this.storage[ key ], value ];
+         this.storage[ key ] = { value: value};
+        // this.storage[ key ] = [ ...this.storage[ key ], value ];
     }
 }
 
